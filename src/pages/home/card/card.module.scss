@@ -97,15 +97,37 @@
         display: flex;
         justify-content: space-between;
         margin: 6px 0;
+    
+        .color_type {
+            border: 1px solid #424242;
+            border-radius: 4px;
+            text-align: center;
+            height: 20px;
+            line-height: 17px;
+            width: 50px;
+            color: white;
+        }
     }
 
-    .color_type {
-        border: 1px solid #424242;
-        border-radius: 4px;
-        text-align: center;
-        height: 20px;
-        line-height: 17px;
-        width: 50px;
-        color: white;
+    .div_evolucion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .item_evo {
+            >img {
+                width: 80px;
+                transition: 0.3s ease-in-out;
+                
+                &:hover {
+                    transform: scale(1.4);
+                    transition-duration: 200ms;
+                    z-index: 56
+                }
+            }
+            h6 {
+                text-align: center;
+            }
+        }
     }
 }

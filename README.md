@@ -10,6 +10,11 @@
 
 6 - Para ver la App Ingreso a: http://localhost:5173/ 
 
-7 - Corro para instalar los estilos con sass y los iconos de axios: yarn add sass react icons axios
+7 - Corro para instalar los estilos con sass y los iconos de axios: yarn add sass react-icons axios
 
 en un componente si escribo "rafc" autocompleta una variable o con "rfc" autocompleta una funcion
+
+PARA CORRER LA APP CORRER: 
+1- yarn 
+2- yarn dev
+3- Ingresar a http://localhost:5173/
