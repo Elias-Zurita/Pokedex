@@ -36,7 +36,7 @@ export default function Card({card}) {
     async function getPokemonImagen (id){
       const response = await axios.get(`${URL_POKEMON}/${id}`)
 
-      return response?.data?.sprites?.other['official-artwork']?.front_default
+      return response?.data?.sprites?.other?.home?.front_shiny
     }
 
     if (especiePokemon?.url_especie){
@@ -98,7 +98,7 @@ export default function Card({card}) {
     <div className={css.card}>
       <img  
         className={css.img_poke}  
-        src={itemPokemon?.sprites?.other["official-artwork"]?.front_default} 
+        src={itemPokemon?.sprites?.other?.home?.front_shiny} 
         alt="pokemon" 
       /> 
       <div className={`bg-${especiePokemon?.data?.color?.name} ${css.sub_card} `} > 
